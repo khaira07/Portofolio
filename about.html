@@ -104,9 +104,35 @@
       </div>
 
       <style>
+         .br4{
+          animation: kayla 1s  ease-in  alternate;
+        }
+        @keyframes kayla{
+                        from{
+                            transform: translateX(-1000px);
+                         
+                        }
+                        to{
+                            transform: translateX(-10px);
+                           
+                        }
+                    }
+        .br3{
+          animation: kayla 1s  ease-in  alternate;
+        }
+        @keyframes kayla{
+                        from{
+                            transform: translateY(-1000px);
+                         
+                        }
+                        to{
+                            transform: translateY(-10px);
+                           
+                        }
+                    }
+      
         .bor {
-          animation: kayla 1s ease-in alternate;
-          background-color: aquamarine;
+          background: linear-gradient(aquamarine,rgb(221, 221, 221));
           height: 100vh;
         }
 
@@ -114,14 +140,6 @@
           display: flex;
         justify-content: center;
         align-items: center;
-        }
-        @keyframes kayla {
-          from {
-            transform: translateY(-1000px) scale(5);
-          }
-          to {
-            transform: translateY(-10px) scaleY(3);
-          }
         }
         .about {
           width: 900px;
@@ -149,12 +167,21 @@
           width: 140px;
           align-self: center;
           /* margin-left: 300px; */
+          animation: kayla 1s  ease-in  alternate;
         }
+        @keyframes kayla{
+                        from{
+                            transform: translateY(-1000px) scale(90);
+                         
+                        }
+                        to{
+                            transform: translateY(-10px) ;
+                           
+                        }
+                    }
       
 
-        .br2 {
-          margin-top: 30px;
-        }
+      
       </style>
     </div>
   </body>
