@@ -81,8 +81,6 @@
         margin-bottom: 50px;
     }
                 </style>
-<br>
-<br>
 </nav>
 
 
@@ -100,17 +98,18 @@
                 <style>
                     
                     .box1{
-    width: 300px;
-    height: 210px;
+    /* width: 300px;
+    height: 210px; */
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
     justify-content: center;
     display: flex;
-    margin: 150px 40px;
+    /* margin: 150px 40px; */
     animation: kayla 1s  ease-in  alternate;
                   
                 }
+
                 @keyframes kayla{
                         from{
                             transform: translateY(-1000px);
@@ -123,14 +122,14 @@
                     }
 
 .box2{
-    width: 300px;
-    height: 210px;
+    /* width: 300px;
+    height: 210px; */
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
-    margin: 150px 40px;
+    /* margin: 150px 40px; */
     animation: kayla1 1s  ease-in  alternate;
 }
 @keyframes kayla1{
@@ -145,16 +144,13 @@
                     }
 
 .box3{
-    width: 300px;
-    height: 210px;
     background-repeat: no-repeat;
     background-size: cover;
-    align-items: center;
     display: flex;
-    flex-direction: column;
-    margin: 150px 40px;
-    padding-top: 30px;
-    animation: kayla2 1s  ease-in  alternate;
+    align-items: center;
+    justify-content: center;
+    /* margin: 150px 40px; */
+    animation: kayla1 1s  ease-in  alternate;
 }
 @keyframes kayla2{
                         from{
@@ -170,9 +166,30 @@
 .container{
    
  display: flex;
- padding-left: 100px;
+ /* padding-left: 100px; */
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     background: linear-gradient(185deg, #00bfff, #e6e6fa);
+    justify-content: space-around;
+    height: 100vh;
+}
+
+
+@media (max-width: 830px) {
+    .container{
+        display: block;
+    height: fit-content;
+
+    }
+    .box1{
+    padding-top: 40px;
+    margin-bottom: 50px;
+    }
+    .box2{
+        margin-bottom: 50px;
+    }
+    .box3{
+        padding-bottom: 50px;
+    }
 }
 
                 </style>
