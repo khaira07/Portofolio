@@ -12,7 +12,7 @@
                 <div class="logo"><a href="">Portofolio</a></div>
                 <div class="menu">
                     <ul>
-                        <li><a href="home.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -41,8 +41,19 @@
         font-family: courier;
         color:#364f6b;
     }
+    @media (min-width: 1102px) {
+        .logo a{
+            margin-left: 30px;
+        }
+    }
     .menu{
-        float: right;
+        display: none;
+    }
+    @media (min-width: 632px) {
+        .menu{
+            display: flex;
+            float: right;
+        }
     }
     nav{
         width: 100%;
