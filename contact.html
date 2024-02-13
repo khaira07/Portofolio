@@ -4,87 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
-
+   
 </head>
 <body>
+ <div id="particles-js">
     <div id="nav">
         <nav>
-            <div class="laper">
-                <div class="logo"><a href="">Portofolio</a></div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
+          <div class="laper">
+            <div class="logo"><a href="">Portofolio</a></div>
+            <div class="menu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
             </div>
+          </div>
+          <style>
+          
+            * {
+              text-decoration: none;
+              margin: 0px;
+              padding: 0px;
+            }
+            .laper {
+              width: 1100px;
+              margin: auto;
+              position: relative;
               
-                <style>
-                     *{
-        text-decoration: none;
-        margin: 0px;
-        padding: 0px;
-    }
-    .laper{
-        width: 1100px;
-        margin: auto;
-        position: relative;
-    }
-    body{
-        margin: 0px;
-        padding: 0px;
-        font-family: 'Open Sans',sans-serif;
-    }
-    .logo a{
-        font-size: 30px;
-        font-weight: 800;
-        float: left;
-        font-family: courier;
-        color:#364f6b;
-    }
-    .menu{
-        float: right;
-    }
-    nav{
-        width: 100%;
-        margin: auto;
-        display: flex;
-        line-height: 40px;
-        position: sticky;
-        position: -webkit-sticky;
-        top: 0;
-        background: #90cfd1;
-    }
-    nav ul{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-    nav ul li{
-        float: left;
-    }
-    nav ul li a{
-        color: black;
-        font-weight: bold;
-        text-align: center;
-        padding: 0px 16px 0px 16px;
-        text-decoration: none;
-    }
-    nav ul li a:hover{
-        text-decoration: underline;
-    }
-    section{
-        margin: auto;
-        display: flex;
-        margin-bottom: 50px;
-    }
-                </style>
+            }
+            body {
+              margin: 0px;
+              padding: 0px;
+              font-family: "Open Sans", sans-serif;
+            }
+            .logo a {
+              font-size: 30px;
+              font-weight: 800;
+              float: left;
+              font-family: courier;
+              color: #364f6b;
+            }
+            .menu {
+              float: right;
+            }
+            nav {
+              width: 100%;
+              margin: auto;
+              display: flex;
+              line-height: 40px;
+              position: sticky;
+              position: -webkit-sticky;
+              top: 0;
+              z-index: 10;
+            }
+            nav ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+            }
+            nav ul li {
+              float: left;
+            }
+            nav ul li a {
+              color: black;
+              font-weight: bold;
+              text-align: center;
+              padding: 0px 16px 0px 16px;
+              text-decoration: none;
+            }
+            nav ul li a:hover {
+              background: rgb(175, 174, 175);
+            }
+            section {
+              margin: auto;
+              display: flex;
+              margin-bottom: 50px;
+            }
+          </style>
 </nav>
 
 
-                <div class="container"><!--untuk contact-->
+<!--untuk contact-->
+                <div class="container">
                     <div class="box1">
          <a href="https://wa.me/6282179190352"><img src="pngtree-whatsapp-mobile-software-icon-png-image_6315991.png" width="140px" height="140px"></a>
                     </div>
@@ -96,6 +99,17 @@
                 </div>
             </div>
                 <style>
+                     body{
+   margin: 0;
+   padding: 0;
+   height: 100vh; 
+   overflow: hidden;
+}
+            #particles-js{
+    height: 100%;
+    background-image: linear-gradient( #bbbaba ,rgb(192, 187, 187));
+   
+}
                     
                     .box1{
     /* width: 300px;
@@ -107,7 +121,7 @@
     display: flex;
     /* margin: 150px 40px; */
     animation: kayla 1s  ease-in  alternate;
-                  
+                 
                 }
 
                 @keyframes kayla{
@@ -131,6 +145,7 @@
     justify-content: center;
     /* margin: 150px 40px; */
     animation: kayla1 1s  ease-in  alternate;
+    
 }
 @keyframes kayla1{
                         from{
@@ -168,16 +183,23 @@
  display: flex;
  /* padding-left: 100px; */
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    background: linear-gradient(185deg, #00bfff, #e6e6fa);
+    /* background: linear-gradient(185deg, #00bfff, #e6e6fa); */
     justify-content: space-around;
-    height: 100vh;
+    right: 0;
+                  top: 0;
+                  left: 0;
+                  bottom: 0;
+    height: 100%;
+    position: absolute;
 }
 
 
 @media (max-width: 830px) {
     .container{
         display: block;
-    height: fit-content;
+    /* height: fit-content; */
+    /* position: absolute; */
+    top: 200px;
 
     }
     .box1{
@@ -193,6 +215,9 @@
 }
 
                 </style>
-                
+               </div>
+               </div>
+                <script type="text/javascript" src="particles.js"></script>
+                <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
