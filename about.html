@@ -97,15 +97,14 @@
         <div class="container">
           <div class="about">
             <h2 class="br">About Me</h2>
-            <p class="br3">
+            <p class="br3" align="center">
               I am a vocational school student, yes I am still a student and I
               am majoring in RPL (Software Engineering) and I am currently
               carrying out PKL at a PT, where the name of the PT is PT.
               KITAKALE. I am very happy and grateful to be a PKL there because I
               have gained a lot of knowledge, especially about HTML, CSS, etc.
-            </p>
-
-            <p class="br4">
+          <br />
+          <br>
               I have a hobby, namely I really like singing and reading, but not
               reading textbooks, hehe, but reading novels, and I also like
               writing, writing anything. OK, that's all about me!! Thank you!!
@@ -129,8 +128,13 @@
 .br3{
           animation: kayla 1s  ease-in  alternate;
           position: absolute;
-          /* margin-top: 30px;  */
-          align-items: center; 
+          margin-top: 200px; 
+          right: 0;
+                  top: 0px;
+                  left: 0;
+                  bottom: 0;
+          /* align-items: center; 
+          justify-content: center; */
         }
         @keyframes kayla{
                         from{
@@ -143,24 +147,7 @@
                         }
                     }
 
-         .br4{
-          animation: kayla 1s  ease-in  alternate;
-          position: absolute;
-          margin-top: 130px;
-        }
-        @keyframes kayla{
-                        from{
-                            transform: translateY(-1000px);
-                         
-                        }
-                        to{
-                            transform: translateY(-10px);
-                           
-                        }
-                    }
-                   
-       
-      
+        
         /* .bor {
           /* background: linear-gradient(aquamarine,rgb(221, 221, 221)); */
           /* height: 100vh; */
@@ -192,19 +179,29 @@
                 width: 400px;
             }
         } 
-
+       
         .br {
           border-bottom: 2px solid green;
           /* position: absolute; */
-          width: 140px;
-          align-self: center;
-          /* margin-left: 300px; */
+          width: 130px;
+          /* text-align: center; */
+          /* align-self: center; */
+          margin-left: 300px;
           animation: kayla 1s  ease-in  alternate;
+          margin-top: 40px;
           right: 0;
                   top: 0;
                   left: 0;
                   bottom: 0;
+
         }
+        @media (max-width: 412px) {
+            .br{
+                width: 120px;
+                margin-left: 150px;
+            }
+        } 
+       
         @keyframes kayla{
                         from{
                             transform: translateY(-1000px) ;
